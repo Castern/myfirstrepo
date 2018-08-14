@@ -1,6 +1,6 @@
 
 The zip contains five files:
-**A) query.txt__ 
+**A) query.txt <br>
 B) unique_query.txt__
 C) logistic_regression.ipnyb__
 D) data_file.csv__
