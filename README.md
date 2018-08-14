@@ -1,51 +1,80 @@
 
-The zip contains three files:
-**A) Query.txt
-B) result_july24.csv
-C) code.ipnyb**
+The zip contains five files:
+**A) query.txt
+B) unique_query.txt
+C) logistic_regression.ipnyb
+D) data_file.csv
+E) unique_data_file.csv**
+							
+A) The **query.txt**  
+This SQL query returns the following data
+Note that it contains one to many values for respondents in terms of COMPANY_ID, ENVIRONMENT, DEVICE_TYPE and ARCHIVE_FLAG
+
+	1] RESPONDENT_ID     		- Every respondent’s unique ID
+        2] AVG_DURATION_FOR_COMPLETES 	- The average duration of events that have been marked Complete
+        3] MEDIAN_DURATION_FOR_COMPLETES- The median duration of events that have been marked Complete
+        4] AVG_DURATION_FOR_QCFS   	- The average duration of events that have been marked as Quality Check Fails
+        5] MEDIAN_DURATION_FOR_QCFS  	- The median duration of events that have been marked as Quality Check Fails
+        6] DISTINCT_EVENT_COUNT 	- The total number of distinct events for a respondent
+        7] 10TH_PERCENTILE_DURATION	- The 10th percentile of duration of the survey
+        8] 20TH_PERCENTILE_DURATION 	- The 20th percentile of duration of the survey
+        9] 30TH_PERCENTILE_DURATION	- The 30th percentile of duration of the survey
+        10] 40TH_PERCENTILE_DURATION	- The 40th percentile of duration of the survey
+        11] 50TH_PERCENTILE_DURATION	- The 50th percentile of duration of the survey
+        12] 60TH_PERCENTILE_DURATION	- The 60th percentile of duration of the survey
+        13] 70TH_PERCENTILE_DURATION 	- The 70th percentile of duration of the survey
+        14] 80TH_PERCENTILE_DURATION	- The 80th percentile of duration of the survey
+        15] 90TH_PERCENTILE_DURATION 	- The 90th percentile of duration of the survey
+        16] TOTAL_SESSION_COUNT 	- The total count of sessions for all surveys taken by a respondent
+        17] TOTAL_INTERVIEW_COUNT 	- The total surveys taken by a respondent
+        18] ALL_COMPLETE_COUNTS		- The count of events marked as complete for a respondent
+        19] ALL_QCF_COUNTS		- The count of events that failed the quality checks for a respondent
+        20] ALL_SCREENOUT_COUNT		- The count of events that are marked as screen out for a respondent
+	21] EMAIL_ADDRESS		- The email address of the respondent
+	22] FIRST_NAME			- The first name of the respondent
+	23] LAST_NAME			- The last name of the respondent
+	24] DOMAIN_NAME			- The domain of the respondent
+	25] PANEL_ID			- 
+	26] BRAND_ID			- The brand code the respondent is affiliated to
+	27] GENDER			- The gender of the respondent
+	28] AGE				- The age of the respondent
+	29] COUNTRY_CODE		- The country code for the respondent
+	30] IS_BAD_EMAIL		- Whether the email is flagged as bad
+	31] IS_RESTING			- 
+	32] IS_SEED			- 
+	33] IS_VERIFIED			- Whether the email is flagged as verified
+	34] IS_GHOST			- 
+	35] IS_ACTIVE			- Whether the email is flagged as active
+	36] COMPANY_ID			- The code of the company affiliated with the respondent
+	37] DEVICE_TYPE			- The type of device used by the respondent
+	38] ENVIRONMENT			- The browser used by the respondent
+	39] ARCHIVE_FLAG		- Whether the respondent was archived
+	40] IS_QUARANTINED		- Whether the respondent was quarantined
+	
 
 
-A) The **query.txt** consist of the Snowflake SQL query that retrieves 
-The following features:
-	      1] “RESPONDENT_ID"      - Every respondent’s unique ID
-        2] “COMPLETE_AVGERAGE" 	- The average duration of events that have been marked Complete
-        3] ”COMPLETE_MEDIAN”  	- The median duration of events that have been marked Complete
-        4] "QCF_AVERAGE”    	- The average duration of events that have been marked as Quality Check Fails
-        5] “QCF_MEDIAN"  	- The median duration of events that have been marked as Quality Check Fails
-        6] “EVENT_COUNT” 	- The total number of distinct events for a respondent
-        7] “PERCENTILE10” 	- The 10th percentile of duration of the survey
-        8] “PERCENTILE20” 	- The 20th percentile of duration of the survey
-        9] “PERCENTILE30” 	- The 30th percentile of duration of the survey
-        10] “PERCENTILE40” 	- The 40th percentile of duration of the survey
-        11] “PERCENTILE50” 	- The 50th percentile of duration of the survey
-        12] “PERCENTILE60” 	- The 60th percentile of duration of the survey
-        13] “PERCENTILE70” 	- The 70th percentile of duration of the survey
-        14] “PERCENTILE80” 	- The 80th percentile of duration of the survey
-        15] “PERCENTILE90” 	- The 90th percentile of duration of the survey
-        16] “TOTAL_SESSIONS” 	- The total count of sessions for all surveys taken by a respondent
-        17] “TOTAL_INTERVIEWS” 	- The total surveys taken by a respondent
-        18] “COMPLETE_COUNT” 	- The count of events marked as complete for a respondent
-        19] “QCF_COUNT” 	- The count of events that failed the quality checks for a respondent
-        20] “SCREENOUT_COUNT” 	- The count of events that are marked as screen out for a respondent
-        21] ”IS_QUARANTINED" 	- The respondents flagged as Quarantined or not Quarantined.
-
-
-	The above features have been acquired as a result of querying three tables:
-	1] ERI_STG.PUBLIC.NOVA_RESPONDENT	- RESPONDENT ID, IS_QUARANTINED
-	2] ERI_STG.PUBLIC.STS_QP_SURVEY_TRANS and
-	3] ERI_STG.PUBLIC.STS_QM_EVENTS. 	- These two tables were queried to get aggregate values like - COMPLETE_AVERAGE,
-						  COMPLETE_MEDIAN, QCF_AVERAGE, QCF_MEDIAN, COMPLETE_COUNT, QCF_COUNT, SCREENOUT_COUNT AND PERCENTILES
-	4] ERI_STG.PUBLIC.RESPONDENT_SESSION    - TOTAL_SESSIONS
+	The above features have been acquired as a result of querying the following tables:
+	A] ERI_STG.PUBLIC.NOVA_RESPONDENT	
+		- RESPONDENT ID, IS_QUARANTINED, 
+	B] ERI_STG.PUBLIC.STS_QP_SURVEY_TRANS and
+	C] ERI_STG.PUBLIC.STS_QM_EVENTS. 	
+		- These two tables were queried to get aggregate values like - COMPLETE_AVERAGE, COMPLETE_MEDIAN, QCF_AVERAGE, 			QCF_MEDIAN, COMPLETE_COUNT, QCF_COUNT, SCREENOUT_COUNT AND PERCENTILES
+	D] ERI_STG.PUBLIC.RESPONDENT_SESSION    - TOTAL_SESSIONS
 	       
 
 
+**B) unique_query.txt**
+Unlike the previous query in order to have one-to-one values, 
+This SQL Query returns the above data but 36, 37, 38 and 39 and in addition to that returns the count of the count of COMPANY_ID, ENVIRONMENT, DEVICE_TYPE and ARCHIVE_FLAG is recorded in this query for each respondent along with the most frequent occurrence of COMPANY_ID, ENVIRONMENT and DEVICE_TYPE per respondent.
 
-**B) result_july24.csv**
-The features reurned by the above query are stored in this csv. You may re-run the query to get updated results to date and store in a new file.
 
+**C) data_file.csv**
+This CSV contains the data returned by **A) query.txt**
 
+**D) unique_data_file.csv**
+This CSV contains the data returned by **B) unique_query.txt**
 
-**C) code.ipnyb**
+**E) logistic_regression.ipnyb**
 
 - This is a jupyter notebook that contains the python code for logistic regression.
 - In order to view the data in a tabular format, the pandas library is used.
