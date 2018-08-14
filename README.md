@@ -1,5 +1,5 @@
 
-The zip contains five files:
+The zip contains five files:<br>
 **A) query.txt <br>
 B) unique_query.txt <br>
 C) logistic_regression.ipnyb <br>
@@ -10,54 +10,54 @@ A) The **query.txt**
 This SQL query returns the following data
 Note that it contains one to many values for respondents in terms of COMPANY_ID, ENVIRONMENT, DEVICE_TYPE and ARCHIVE_FLAG
 
-	1] RESPONDENT_ID     		- Every respondent’s unique ID
-        2] AVG_DURATION_FOR_COMPLETES 	- The average duration of events that have been marked Complete
-        3] MEDIAN_DURATION_FOR_COMPLETES- The median duration of events that have been marked Complete
-        4] AVG_DURATION_FOR_QCFS   	- The average duration of events that have been marked as Quality Check Fails
-        5] MEDIAN_DURATION_FOR_QCFS  	- The median duration of events that have been marked as Quality Check Fails
-        6] DISTINCT_EVENT_COUNT 	- The total number of distinct events for a respondent
-        7] 10TH_PERCENTILE_DURATION	- The 10th percentile of duration of the survey
-        8] 20TH_PERCENTILE_DURATION 	- The 20th percentile of duration of the survey
-        9] 30TH_PERCENTILE_DURATION	- The 30th percentile of duration of the survey
-        10] 40TH_PERCENTILE_DURATION	- The 40th percentile of duration of the survey
-        11] 50TH_PERCENTILE_DURATION	- The 50th percentile of duration of the survey
-        12] 60TH_PERCENTILE_DURATION	- The 60th percentile of duration of the survey
-        13] 70TH_PERCENTILE_DURATION 	- The 70th percentile of duration of the survey
-        14] 80TH_PERCENTILE_DURATION	- The 80th percentile of duration of the survey
-        15] 90TH_PERCENTILE_DURATION 	- The 90th percentile of duration of the survey
-        16] TOTAL_SESSION_COUNT 	- The total count of sessions for all surveys taken by a respondent
-        17] TOTAL_INTERVIEW_COUNT 	- The total surveys taken by a respondent
-        18] ALL_COMPLETE_COUNTS		- The count of events marked as complete for a respondent
-        19] ALL_QCF_COUNTS		- The count of events that failed the quality checks for a respondent
-        20] ALL_SCREENOUT_COUNT		- The count of events that are marked as screen out for a respondent
-	21] EMAIL_ADDRESS		- The email address of the respondent
-	22] FIRST_NAME			- The first name of the respondent
-	23] LAST_NAME			- The last name of the respondent
-	24] DOMAIN_NAME			- The domain of the respondent
-	25] PANEL_ID			- 
-	26] BRAND_ID			- The brand code the respondent is affiliated to
-	27] GENDER			- The gender of the respondent
-	28] AGE				- The age of the respondent
-	29] COUNTRY_CODE		- The country code for the respondent
-	30] IS_BAD_EMAIL		- Whether the email is flagged as bad
-	31] IS_RESTING			- 
-	32] IS_SEED			- 
-	33] IS_VERIFIED			- Whether the email is flagged as verified
-	34] IS_GHOST			- 
-	35] IS_ACTIVE			- Whether the email is flagged as active
-	36] COMPANY_ID			- The code of the company affiliated with the respondent
-	37] DEVICE_TYPE			- The type of device used by the respondent
-	38] ENVIRONMENT			- The browser used by the respondent
-	39] ARCHIVE_FLAG		- Whether the respondent was archived
-	40] IS_QUARANTINED		- Whether the respondent was quarantined
+	1] RESPONDENT_ID     		- Every respondent’s unique ID<br>
+        2] AVG_DURATION_FOR_COMPLETES 	- The average duration of events that have been marked Complete<br>
+        3] MEDIAN_DURATION_FOR_COMPLETES- The median duration of events that have been marked Complete<br>
+        4] AVG_DURATION_FOR_QCFS   	- The average duration of events that have been marked as Quality Check Fails<br>
+        5] MEDIAN_DURATION_FOR_QCFS  	- The median duration of events that have been marked as Quality Check Fails<br>
+        6] DISTINCT_EVENT_COUNT 	- The total number of distinct events for a respondent<br>
+        7] 10TH_PERCENTILE_DURATION	- The 10th percentile of duration of the survey<br>
+        8] 20TH_PERCENTILE_DURATION 	- The 20th percentile of duration of the survey<br>
+        9] 30TH_PERCENTILE_DURATION	- The 30th percentile of duration of the survey<br>
+        10] 40TH_PERCENTILE_DURATION	- The 40th percentile of duration of the survey<br>
+        11] 50TH_PERCENTILE_DURATION	- The 50th percentile of duration of the survey<br>
+        12] 60TH_PERCENTILE_DURATION	- The 60th percentile of duration of the survey<br>
+        13] 70TH_PERCENTILE_DURATION 	- The 70th percentile of duration of the survey<br>
+        14] 80TH_PERCENTILE_DURATION	- The 80th percentile of duration of the survey<br>
+        15] 90TH_PERCENTILE_DURATION 	- The 90th percentile of duration of the survey<br>
+        16] TOTAL_SESSION_COUNT 	- The total count of sessions for all surveys taken by a respondent<br>
+        17] TOTAL_INTERVIEW_COUNT 	- The total surveys taken by a respondent<br>
+        18] ALL_COMPLETE_COUNTS		- The count of events marked as complete for a respondent<br>
+        19] ALL_QCF_COUNTS		- The count of events that failed the quality checks for a respondent<br>
+        20] ALL_SCREENOUT_COUNT		- The count of events that are marked as screen out for a respondent<br>
+	21] EMAIL_ADDRESS		- The email address of the respondent<br>
+	22] FIRST_NAME			- The first name of the respondent<br>
+	23] LAST_NAME			- The last name of the respondent<br>
+	24] DOMAIN_NAME			- The domain of the respondent<br>
+	25] PANEL_ID			- <br>
+	26] BRAND_ID			- The brand code the respondent is affiliated to<br>
+	27] GENDER			- The gender of the respondent<br>
+	28] AGE				- The age of the respondent<br>
+	29] COUNTRY_CODE		- The country code for the respondent<br>
+	30] IS_BAD_EMAIL		- Whether the email is flagged as bad<br>
+	31] IS_RESTING			- <br>
+	32] IS_SEED			- <br>
+	33] IS_VERIFIED			- Whether the email is flagged as verified<br>
+	34] IS_GHOST			- <br>
+	35] IS_ACTIVE			- Whether the email is flagged as active<br>
+	36] COMPANY_ID			- The code of the company affiliated with the respondent<br>
+	37] DEVICE_TYPE			- The type of device used by the respondent<br>
+	38] ENVIRONMENT			- The browser used by the respondent<br>
+	39] ARCHIVE_FLAG		- Whether the respondent was archived<br>
+	40] IS_QUARANTINED		- Whether the respondent was quarantined<br>
 	
-
+<br>
 
 	The above features have been acquired as a result of querying the following tables:
-	A] ERI_STG.PUBLIC.NOVA_RESPONDENT	
+	A] ERI_STG.PUBLIC.NOVA_RESPONDENT<br>	
 		- RESPONDENT ID, IS_QUARANTINED, 
 	B] ERI_STG.PUBLIC.STS_QP_SURVEY_TRANS and
-	C] ERI_STG.PUBLIC.STS_QM_EVENTS. 	
+	C] ERI_STG.PUBLIC.STS_QM_EVENTS<br>	
 		- These two tables were queried to get aggregate values like - COMPLETE_AVERAGE, COMPLETE_MEDIAN, QCF_AVERAGE, 			QCF_MEDIAN, COMPLETE_COUNT, QCF_COUNT, SCREENOUT_COUNT AND PERCENTILES
 	D] ERI_STG.PUBLIC.RESPONDENT_SESSION    - TOTAL_SESSIONS
 	       
