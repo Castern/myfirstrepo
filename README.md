@@ -65,8 +65,8 @@ Note that it contains one to many values for respondents in terms of COMPANY_ID,
 
 **B) unique_query.txt** <br>
 <br>
-Unlike the previous query in order to have one-to-one values, 
-This SQL Query returns the above data but 36, 37, 38 and 39 and in addition to that returns the count of the count of COMPANY_ID, ENVIRONMENT, DEVICE_TYPE and ARCHIVE_FLAG is recorded in this query for each respondent along with the most frequent occurrence of COMPANY_ID, ENVIRONMENT and DEVICE_TYPE per respondent.
+Unlike the above query in order to have one-to-one values, 
+this SQL Query returns the above data but 36, 37, 38 and 39 and in addition to that returns the count of COMPANY_ID, ENVIRONMENT, DEVICE_TYPE and ARCHIVE_FLAG for each respondent along with the most frequent occurrence of COMPANY_ID, ENVIRONMENT and DEVICE_TYPE per respondent.
 
 
 **C) data_file.csv**<br>
