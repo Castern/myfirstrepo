@@ -10,7 +10,7 @@ A) The **query.txt**
 This SQL query returns the following data
 Note that it contains one to many values for respondents in terms of COMPANY_ID, ENVIRONMENT, DEVICE_TYPE and ARCHIVE_FLAG
 
-	1] RESPONDENT_ID     		- Every respondent’s unique ID
+		1] RESPONDENT_ID     		- Every respondent’s unique ID
         2] AVG_DURATION_FOR_COMPLETES 	- The average duration of events that have been marked Complete
         3] MEDIAN_DURATION_FOR_COMPLETES- The median duration of events that have been marked Complete
         4] AVG_DURATION_FOR_QCFS   	- The average duration of events that have been marked as Quality Check Fails
