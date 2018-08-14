@@ -1,10 +1,10 @@
 
 The zip contains five files:
 **A) query.txt <br>
-B) unique_query.txt__
-C) logistic_regression.ipnyb__
-D) data_file.csv__
-E) unique_data_file.csv**__
+B) unique_query.txt <br>
+C) logistic_regression.ipnyb <br>
+D) data_file.csv <br>
+E) unique_data_file.csv** <br>
 							
 A) The **query.txt**  
 This SQL query returns the following data
