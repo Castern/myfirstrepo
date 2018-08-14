@@ -63,18 +63,22 @@ Note that it contains one to many values for respondents in terms of COMPANY_ID,
 	       
 
 
-**B) unique_query.txt**
+**B) unique_query.txt** <br>
+<br>
 Unlike the previous query in order to have one-to-one values, 
 This SQL Query returns the above data but 36, 37, 38 and 39 and in addition to that returns the count of the count of COMPANY_ID, ENVIRONMENT, DEVICE_TYPE and ARCHIVE_FLAG is recorded in this query for each respondent along with the most frequent occurrence of COMPANY_ID, ENVIRONMENT and DEVICE_TYPE per respondent.
 
 
-**C) data_file.csv**
+**C) data_file.csv**<br>
+<br>
 This CSV contains the data returned by **A) query.txt**
 
-**D) unique_data_file.csv**
+**D) unique_data_file.csv**<br>
+<br>
 This CSV contains the data returned by **B) unique_query.txt**
 
-**E) logistic_regression.ipnyb**
+**E) logistic_regression.ipnyb**<br>
+<br>
 
 - This is a jupyter notebook that contains the python code for logistic regression.
 - In order to view the data in a tabular format, the pandas library is used.
